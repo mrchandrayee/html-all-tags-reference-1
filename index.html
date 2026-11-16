@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A visual reference of common HTML tags with live examples.">
+  <title>HTML All Tags</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>HTML All Tags</h1>
+  </header>
+
+  <main class="reference">
+    <section class="tag-section" aria-labelledby="basic-title">
+      <h2 class="section-title" id="basic-title"><span>01</span>Basic HTML Tags</h2>
+      <div class="card-grid">
+        <article class="tag-card">
+          <code class="tag">&lt;html&gt;</code><h3>HTML Document</h3>
+          <p>Root element of an HTML document.</p>
+          <pre class="snippet">&lt;html&gt; ... &lt;/html&gt;</pre>
+        </article>
+        <article class="tag-card">
+          <code class="tag">&lt;head&gt;</code><h3>Document Head</h3>
+          <p>Contains metadata and document information.</p>
+          <pre class="snippet">&lt;head&gt;</pre>
+        </article>
+        <article class="tag-card">
+          <code class="tag">&lt;body&gt;</code><h3>Page Content</h3>
+          <p>Contains everything visible on the webpage.</p>
+          <pre class="snippet">&lt;body&gt;</pre>
+        </article>
+        <article class="tag-card">
+          <code class="tag">&lt;div&gt;</code><h3>Container</h3>
+          <p>Generic block-level container.</p>
+          <div class="demo-box">DIV Container</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="tag-section" aria-labelledby="text-title">
+      <h2 class="section-title" id="text-title"><span>02</span>Text &amp; Content Tags</h2>
+      <div class="card-grid">
+        <article class="tag-card">
+          <code class="tag">&lt;h1&gt; – &lt;h6&gt;</code><h3>Headings</h3>
+          <p>HTML provides six heading levels.</p>
+          <div class="heading-demo"><strong>H1</strong><b>H3</b><small>H6</small></div>
+        </article>
+        <article class="tag-card">
+          <code class="tag">&lt;p&gt;</code><h3>Paragraph</h3>
+          <p>Defines a paragraph of text.</p>
+          <p class="example-text">Beautiful HTML content.</p>
+        </article>
+        <article class="tag-card">
+          <code class="tag">&lt;a&gt;</code><h3>Hyperlink</h3>
+          <p>Creates links to other pages or resources.</p>
+          <a class="demo-link" href="#media">Explore →</a>
+        </article>
+        <article class="tag-card">
+          <code class="tag">&lt;strong&gt;</code><h3>Strong Text</h3>
+          <p>Represents important content.</p>
+          <strong class="example-text">Important!</strong>
+        </article>
+        <article class="tag-card">
+          <code class="tag">&lt;em&gt;</code><h3>Emphasis</h3>
+          <p>Represents emphasized text.</p>
+          <em class="example-text">Emphasized text</em>
+        </article>
+        <article class="tag-card">
+          <code class="tag">&lt;mark&gt;</code><h3>Highlight</h3>
+          <p>Highlights relevant text.</p>
+          <p class="example-text">Learn <mark>HTML</mark></p>
+        </article>
+        <article class="tag-card">
+          <code class="tag">&lt;blockquote&gt;</code><h3>Quotation</h3>
+          <p>Represents a long quotation.</p>
+          <blockquote class="quote-demo">Build something<br>amazing.</blockquote>
+        </article>
+        <article class="tag-card">
+          <code class="tag">&lt;code&gt;</code><h3>Code</h3>
+          <p>Displays a fragment of computer code.</p>
+          <code class="code-demo">console.log("Hello");</code>
+        </article>
+      </div>
+    </section>
+
+    <section class="tag-section" id="media" aria-labelledby="media-title">
+      <h2 class="section-title" id="media-title"><span>03</span>Media &amp; Lists</h2>
+      <div class="card-grid">
+        <article class="tag-card">
+          <code class="tag">&lt;img&gt;</code><h3>Image</h3>
+          <p>Embeds an image into the page.</p>
+          <div class="laptop-art" role="img" aria-label="Illustration of a laptop displaying code">
+            <div class="laptop-screen"><span></span><i></i><i></i><i></i><b>&lt;/&gt;</b></div><div class="laptop-base"></div>
+          </div>
+        </article>
+        <article class="tag-card">
+          <code class="tag">&lt;ul&gt;</code><h3>Unordered List</h3>
+          <p>Creates a bullet list.</p>
+          <ul class="sample-list"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+        </article>
+        <article class="tag-card">
+          <code class="tag">&lt;ol&gt;</code><h3>Ordered List</h3>
+          <p>Creates a numbered list.</p>
+          <ol class="sample-list"><li>Design</li><li>Develop</li><li>Deploy</li></ol>
+        </article>
+        <article class="tag-card">
+          <code class="tag">&lt;pre&gt;</code><h3>Preformatted</h3>
+          <p>Displays text preserving whitespace.</p>
+          <pre class="pre-demo">&lt;button&gt;
+  Click Me
+&lt;/button&gt;</pre>
+        </article>
+      </div>
+    </section>
+
+    <section class="tag-section" aria-labelledby="forms-title">
+      <h2 class="section-title" id="forms-title"><span>04</span>Forms &amp; Controls</h2>
+      <div class="card-grid">
+        <article class="tag-card">
+          <code class="tag">&lt;input&gt;</code><h3>Input</h3>
+          <p>Collects user input.</p>
+          <input class="demo-input" type="text" placeholder="Enter your name" aria-label="Enter your name">
+        </article>
+        <article class="tag-card">
+          <code class="tag">&lt;button&gt;</code><h3>Button</h3>
+          <p>Creates an interactive button.</p>
+          <button class="demo-button" id="activateBtn" type="button">Click Me</button>
+          <p class="button-status" id="buttonStatus" aria-live="polite"></p>
+        </article>
+        <article class="tag-card">
+          <code class="tag">&lt;select&gt;</code><h3>Select</h3>
+          <p>Creates a dropdown menu.</p>
+          <select class="demo-input" aria-label="Choose a technology"><option>CSS</option><option>HTML</option><option>JavaScript</option></select>
+        </article>
+        <article class="tag-card">
+          <code class="tag">&lt;textarea&gt;</code><h3>Textarea</h3>
+          <p>Creates a multi-line text input.</p>
+          <textarea class="demo-input demo-textarea" placeholder="Write something..." aria-label="Write something"></textarea>
+        </article>
+        <article class="tag-card">
+          <code class="tag">&lt;form&gt;</code><h3>Form</h3>
+          <p>Groups interactive form controls.</p>
+          <form id="demoForm" class="demo-form">
+            <input class="demo-input" type="email" placeholder="Email address" aria-label="Email address" required>
+            <button class="demo-button" type="submit">Submit</button>
+            <span id="formStatus" class="button-status" aria-live="polite"></span>
+          </form>
+        </article>
+        <article class="tag-card">
+          <code class="tag">&lt;progress&gt;</code><h3>Progress</h3>
+          <p>Displays task progress.</p>
+          <progress class="demo-progress" value="75" max="100">75%</progress>
+        </article>
+      </div>
+    </section>
+
+    <section class="tag-section" aria-labelledby="semantic-title">
+      <h2 class="section-title" id="semantic-title"><span>05</span>Semantic HTML</h2>
+      <div class="card-grid">
+        <article class="tag-card">
+          <code class="tag">&lt;header&gt;</code><h3>Header</h3>
+          <p>Represents introductory content.</p>
+          <div class="demo-box accent">Website Header</div>
+        </article>
+        <article class="tag-card">
+          <code class="tag">&lt;nav&gt;</code><h3>Navigation</h3>
+          <p>Contains navigation links.</p>
+          <nav class="demo-nav"><a href="#basic-title">Home</a><span>·</span><a href="#semantic-title">About</a></nav>
+        </article>
+        <article class="tag-card">
+          <code class="tag">&lt;article&gt;</code><h3>Article</h3>
+          <p>Represents independent content.</p>
+          <div class="demo-box">Blog Article</div>
+        </article>
+        <article class="tag-card">
+          <code class="tag">&lt;section&gt;</code><h3>Section</h3>
+          <p>Groups related content.</p>
+          <div class="demo-box">Content Section</div>
+        </article>
+        <article class="tag-card">
+          <code class="tag">&lt;aside&gt;</code><h3>Aside</h3>
+          <p>Contains related or secondary content.</p>
+          <a class="demo-link" href="#advanced-title">Related Content →</a>
+        </article>
+        <article class="tag-card">
+          <code class="tag">&lt;footer&gt;</code><h3>Footer</h3>
+          <p>Represents footer information.</p>
+          <div class="demo-box accent">© 2026 Website</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="tag-section" aria-labelledby="advanced-title">
+      <h2 class="section-title" id="advanced-title"><span>06</span>Advanced Tags</h2>
+      <div class="card-grid">
+        <article class="tag-card">
+          <code class="tag">&lt;table&gt;</code><h3>Table</h3>
+          <p>Displays structured tabular data.</p>
+          <table class="demo-table"><thead><tr><th>Tag</th><th>Type</th></tr></thead><tbody><tr><td>div</td><td>Block</td></tr><tr><td>span</td><td>Inline</td></tr></tbody></table>
+        </article>
+        <article class="tag-card">
+          <code class="tag">&lt;details&gt;</code><h3>Details</h3>
+          <p>Creates an expandable information panel.</p>
+          <details class="demo-details"><summary>View Details</summary><p>Hidden content appears here.</p></details>
+          <p class="muted">Hidden content appears here.</p>
+        </article>
+        <article class="tag-card">
+          <code class="tag">&lt;hr&gt;</code><h3>Horizontal Rule</h3>
+          <p>Represents a thematic break.</p>
+          <hr class="demo-rule">
+        </article>
+        <article class="tag-card">
+          <code class="tag">&lt;abbr&gt;</code><h3>Abbreviation</h3>
+          <p>Represents an abbreviated word or phrase.</p>
+          <p class="example-text"><abbr title="HyperText Markup Language">HTML</abbr></p>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">HTML All Tags <span>·</span> A visual HTML reference</footer>
+  <script src="script.js"></script>
+</body>
+</html>
